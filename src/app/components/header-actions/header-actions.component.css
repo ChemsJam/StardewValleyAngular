@@ -1,0 +1,474 @@
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+/* Base Button Styles */
+.action-btn, .search-btn, .login-btn, .country-btn {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-btn:hover, .search-btn:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.search-btn.active {
+  background-color: #e60012;
+  color: white;
+}
+
+/* Login Button */
+.login-btn {
+  background: white !important;
+  color:  #e60012 !important;
+  border-radius: 20px !important;
+  padding: 5px 22px !important;
+  border: 1px solid #e60012 !important;
+}
+
+.login-btn:hover {
+  background: #cc0010;
+  transform: translateY(-1px);
+}
+
+.login-btn.active {
+  background: #b8000e;
+  transform: translateY(1px);
+}
+
+/* Country Button */
+.country-btn {
+  padding: 4px;
+}
+
+.country-btn img {
+  width: 24px;
+  height: 18px;
+  border-radius: 2px;
+}
+
+/* Dropdown Overlay */
+.dropdown-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.dropdown-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* SEARCH DROPDOWN STYLES */
+.search-container {
+  position: relative;
+}
+
+.search-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 600px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  z-index: 999;
+  overflow: hidden;
+}
+
+.search-content {
+  padding: 20px;
+}
+
+.search-input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 40px 12px 16px;
+  border: 2px solid #e5e5e5;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #e60012;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-clear {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.search-clear:hover {
+  background: #f0f0f0;
+  color: #666;
+}
+
+.search-results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.search-section h4 {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.trending-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.trending-list li a {
+  color: #e60012;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 4px 0;
+}
+
+.trending-list li a:hover {
+  color: #cc0010;
+  text-decoration: underline;
+}
+
+.products-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-item {
+  display: flex;
+  gap: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.product-item:hover {
+  background-color: #f8f9fa;
+}
+
+.product-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.product-image.donkey-kong {
+  background: linear-gradient(135deg, #8B4513, #D2691E);
+}
+
+.product-image.pokemon {
+  background: linear-gradient(135deg, #4169E1, #87CEEB);
+}
+
+.product-image.mario-party {
+  background: linear-gradient(135deg, #FF6347, #FFD700);
+}
+
+.product-image.pokemon-friends {
+  background: linear-gradient(135deg, #32CD32, #98FB98);
+}
+
+.platform-tag {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: #e60012;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-info h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.product-category {
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.product-item .wishlist-btn {
+  background: none;
+  border: none;
+  color: #e60012;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.product-item .wishlist-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* LOGIN DROPDOWN STYLES */
+.login-container {
+  position: relative;
+}
+
+.login-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 380px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  overflow: hidden;
+}
+
+.login-content {
+  padding: 24px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nintendo-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icon-item {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.icon-item.mushroom {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  animation-delay: 0s;
+}
+
+.icon-item.star {
+  background: linear-gradient(135deg, #ffd93d, #ff9800);
+  animation-delay: 0.5s;
+}
+
+.icon-item.flower {
+  background: linear-gradient(135deg, #6bcf7f, #4caf50);
+  animation-delay: 1s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+.benefits-section {
+  margin-bottom: 24px;
+}
+
+.benefits-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.benefits-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.checkmark {
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.login-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.login-primary-btn, .signup-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-primary-btn {
+  background: #e60012;
+  color: white;
+}
+
+.login-primary-btn:hover {
+  background: #cc0010;
+  transform: translateY(-1px);
+}
+
+.signup-btn {
+  background: white;
+  color: #e60012;
+  border: 2px solid #e60012;
+}
+
+.signup-btn:hover {
+  background: #e60012;
+  color: white;
+}
+
+.additional-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+}
+
+.option-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #666;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.option-link:hover {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.external-link {
+  margin-left: auto;
+  font-size: 12px;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-dropdown {
+    width: 350px;
+    right: -50px;
+  }
+  
+  .search-results {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .login-dropdown {
+    width: 320px;
+    right: -20px;
+  }
+  
+  .header-actions {
+    gap: 8px;
+  }
+  
+  .search-text {
+    display: none;
+  }
+}
+
+.search-btn:hover,
+.action-btn:active {
+  color: #e60012;
+}

@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header Styles */
+.header {
+  background: white;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.nintendo-logo .logo-circle {
+  background: #e60012;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: #e60012;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-actions button {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.header-actions button:hover {
+  background-color: #f0f0f0;
+}
+
+.login-btn {
+  background: #e60012 !important;
+  color: white !important;
+  border-radius: 20px !important;
+  padding: 8px 16px !important;
+}
+
+.country-btn img {
+  width: 20px;
+  height: 15px;
+}
+
+/* Promo Banner */
+.promo-banner {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  padding: 12px 0;
+}
+
+.promo-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.promo-content a {
+  color: white;
+  text-decoration: underline;
+}
+
+.shipping-info, .rewards-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Main Content */
+.main-content {
+  background: linear-gradient(180deg, #e3f2fd 0%, #bbdefb 100%);
+  min-height: calc(100vh - 100px);
+  padding: 30px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  margin: 0 10px;
+}
+
+.current {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Product Section */
+.product-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+/* Product Images */
+.product-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-image {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  aspect-ratio: 16/10;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.thumbnail-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.thumbnail {
+  flex-shrink: 0;
+  width: 80px;
+  height: 60px;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.thumbnail.active {
+  border-color: #e60012;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.7);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+/* Product Info */
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.1;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-row {
+  display: flex;
+  gap: 20px;
+}
+
+.detail-label {
+  font-weight: 500;
+  color: #666;
+  min-width: 80px;
+}
+
+.detail-value {
+  color: #333;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.wishlist-heart {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #e60012;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.wishlist-heart:hover {
+  background-color: #f0f0f0;
+}
+
+.download-btn {
+  background: #e60012;
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background: #cc0010;
+}
+
+.download-note {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* ESRB Section */
+.esrb-section {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.esrb-rating {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.esrb-logo .rating-box {
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+
+.esrb-content p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.users-interact {
+  color: #666;
+  font-style: italic;
+}
+
+/* Compatibility Section */
+.compatibility-section {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.compatibility-info {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.icon-check-circle {
+  width: 24px;
+  height: 24px;
+  background: #4caf50;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.icon-check-circle::before {
+  content: '✓';
+}
+
+.compatibility-info h4 {
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 16px;
+}
+
+.compatibility-info p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Icons (using CSS pseudo-elements for simplicity) */
+.icon-explore::before { content: '🌐'; }
+.icon-shop::before { content: '🛍️'; }
+.icon-support::before { content: '❓'; }
+.icon-search::before { content: '🔍'; }
+.icon-heart::before { content: '♡'; }
+.icon-cart::before { content: '🛒'; }
+.icon-truck::before { content: '🚚'; }
+.icon-rewards::before { content: '🎁'; }
+.icon-download::before { content: '⬇️'; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .product-title {
+    font-size: 32px;
+  }
+  
+  .price {
+    font-size: 28px;
+  }
+  
+  .header-content {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 20px;
+  }
+  
+  .main-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  .promo-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
