@@ -76,8 +76,37 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
       >
         <div class="">
           <!-- Featured Categories -->
-          <div class="row justify-content-center" style="margin-left: 24px; margin-right: 24px;">
-            <div class="col-3" style="display: flex; flex-direction: column; align-items: center;">
+          <div class="row justify-content-center">
+            <!-- 
+            <div class="col-6">
+              <div id="caruselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img  style="height: 100px;" style="width: 20%;  object-fit: cover; object-position: center; border-radius: 0.75rem;" alt="" src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_200/ccb3e8ca3c296e21a8c933e8369031511589d0ef6b079cf5bb3667b09893482c/Global%20Nav/Explore/Nintendo-Switch-2">
+                </div>
+                <div class="carousel-item">
+                  <img  style="height: 100px;" style="width: 20%;  object-fit: cover; object-position: center; border-radius: 0.75rem;" alt="" src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_200/Global%20Nav/Explore/Explore-Nintendo-Switch-alt" draggable="false">                      
+                </div>
+                <div class="carousel-item">
+                  <img  style="height: 100px;" style="width: 20%;  object-fit: cover; object-position: center; border-radius: 0.75rem;" alt="" src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_200/ccb3e8ca3c296e21a8c933e8369031511589d0ef6b079cf5bb3667b09893482c/Global%20Nav/Explore/Games" draggable="false">                      
+                </div>
+                <div class="carousel-item">
+                  <img  style="height: 100px;" style="width: 20%;  object-fit: cover; object-position: center; border-radius: 0.75rem;" alt="" src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_200/Global%20Nav/Explore/Explore-Nintendo-Switch-Online" draggable="false">                      
+                </div>
+              </div>
+              
+              <button class="carousel-control-prev" type="button" data-bs-target="#caruselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#caruselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            </div>
+            -->
+          <div class="col-3" style="display: flex; flex-direction: column; align-items: center;">
               <div class="img-fluid">
                 <img  style="height: 100px;" alt="" loading="lazy" fetchpriority="low" src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_200/ccb3e8ca3c296e21a8c933e8369031511589d0ef6b079cf5bb3667b09893482c/Global%20Nav/Explore/Nintendo-Switch-2">
               </div>
@@ -103,7 +132,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
               <img  style="height: 100px;" alt="" loading="lazy" fetchpriority="low" src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_200/Global%20Nav/Explore/Explore-Nintendo-Switch-Online">    
             </div>
               <span class="fs-5" >Nintendo Switch Online</span>
-            </div>
+            </div> 
           </div>
 
           <hr>

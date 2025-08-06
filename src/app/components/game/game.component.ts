@@ -12,7 +12,7 @@ template: `
         <div class="container">
         <!-- Breadcrumb -->
           <div>
-               <nav class="breadcrumb fw-lighter">
+               <nav class="breadcrumb fw-light">
                   <a href="#">Store</a>
                   <span class="separator">></span>
                   <a href="#">Games</a>
@@ -30,7 +30,7 @@ template: `
                     <img alt="Stardew Valley 1" style="width: 100%; height: 400px; object-fit: cover; object-position: center; border-radius: 0.75rem;"  src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_300/b_white/f_auto/q_auto/ncom/software/switch/70010000001801/7aa9c6cf5e7d4cecf481f18b1d7a9d79e7aab85045b22203effb2dda409bc5b7 300w, https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_502/b_white/f_auto/q_auto/ncom/software/switch/70010000001801/7aa9c6cf5e7d4cecf481f18b1d7a9d79e7aab85045b22203effb2dda409bc5b7 502w, https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000001801/7aa9c6cf5e7d4cecf481f18b1d7a9d79e7aab85045b22203effb2dda409bc5b7 656w, https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000001801/7aa9c6cf5e7d4cecf481f18b1d7a9d79e7aab85045b22203effb2dda409bc5b7 801w, https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/software/switch/70010000001801/7aa9c6cf5e7d4cecf481f18b1d7a9d79e7aab85045b22203effb2dda409bc5b7 930w, https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1065/b_white/f_auto/q_auto/ncom/software/switch/70010000001801/7aa9c6cf5e7d4cecf481f18b1d7a9d79e7aab85045b22203effb2dda409bc5b7 1065w, https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1196/b_white/f_auto/q_auto/ncom/software/switch/70010000001801/7aa9c6cf5e7d4cecf481f18b1d7a9d79e7aab85045b22203effb2dda409bc5b7 1196w, https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000001801/7aa9c6cf5e7d4cecf481f18b1d7a9d79e7aab85045b22203effb2dda409bc5b7 1240w" sizes="(min-width: 1240px) 656px, (min-width: 768px) calc(53vw - 2rem), calc(100vw - 2rem)" src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000001801/7aa9c6cf5e7d4cecf481f18b1d7a9d79e7aab85045b22203effb2dda409bc5b7" fetchpriority="high" loading="eager" decoding="sync">
                   </div>
                   <div class="carousel-item">
-                    <img loading="lazy" alt="" style="width: 100%; height: 400px; object-fit: cover; object-position: center; border-radius: 0.75rem;" src="https://assets.nintendo.com/image/upload/c_limit,f_auto,h_400,q_auto,w_700/v1/ncom/en_US/games/switch/s/stardew-valley-switch/Video/posters/Stardew_Valley_Trailer_ESRB">
+                    <img alt="Stardew Valley 2" style="width: 100%; height: 400px; object-fit: cover; object-position: center; border-radius: 0.75rem;" src="https://assets.nintendo.com/image/upload/c_limit,f_auto,h_400,q_auto,w_700/v1/ncom/en_US/games/switch/s/stardew-valley-switch/Video/posters/Stardew_Valley_Trailer_ESRB">
                   </div>
 
                   <div class="carousel-item">
@@ -91,7 +91,7 @@ template: `
                   <span class="detail-label">Version</span>
                 </div>
                 <div class="col-6">
-                  <span class="fw-lighter">Nintendo Switch</span>
+                  <span class="fw-light">Nintendo Switch</span>
                 </div>
               </div>
               <div class="row dflex align-items-start mt-4 mb-4">
@@ -99,7 +99,7 @@ template: `
                   <span class="detail-label">Edition</span>
                 </div>
                 <div class="col-6">
-                  <span class="fw-lighter">Digital</span>
+                  <span class="fw-light">Digital</span>
                 </div>
               </div>
             </div>
@@ -116,14 +116,14 @@ template: `
               <span class="fs-5 ms-2"> Direct download</span>
             </button>
             
-            <p class="fs-6 fw-lighter">This item will be sent to your system automatically after purchase.</p>
+            <p class="fs-6 fw-light">This item will be sent to your system automatically after purchase.</p>
           </div>
         </div>
 
           <!-- ESRB Rating -->
           
           <div class="esrb-section">
-              <div class="row dflex align-items-left fw-lighter">
+              <div class="row dflex align-items-center fw-light">
                <div class="col-1">
                  <div class="esrb-logo">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" viewBox="0 0 39.68 59.53" role="img" title="Everyone 10+"><defs></defs><g data-name="Layer 2"><g data-name="Layer 1"><path d="M39.69 0H0v59.53h39.69z" class="cls-1"></path><path d="M39.11.64v58.25H.58V.64z"></path><path d="M2.52 2.71H36.9v9.66H2.52zM2.5 14.47h34.4v35.51H2.5zm.01 42.32v-4.71h6.9v1.1H5.28v.67h3.5v1.1h-3.5v.74h4.29v1.1zm12.93-3.34a.52.52 0 0 0-.4-.32 2.5 2.5 0 0 0-.72-.09c-.61 0-.88.1-.88.28 0 .69 4.87.26 4.87 2 0 1.09-1.64 1.63-4 1.63s-3.7-.73-3.75-1.58h2.65a.69.69 0 0 0 .46.37 2.5 2.5 0 0 0 .79.12c.69 0 1.16-.12 1.16-.35 0-.71-4.88-.22-4.88-2 0-1 1.56-1.5 3.67-1.5 2.35 0 3.43.66 3.63 1.49zm7.02.67h1.09c.86 0 1.32-.12 1.32-.45s-.47-.49-1.11-.49h-1.3zm0 1v1.64h-2.77v-4.68h4c2.82 0 3.75.43 3.75 1.34 0 .55-.44 1-1.43 1.16.9.18 1.44.29 1.44 1.24 0 .61 0 .83.29.83v.14h-2.81a1.8 1.8 0 0 1-.14-.82c0-.62-.19-.82-1.48-.82zm9.45-1.94V54h1.16c.55 0 1-.14 1-.41s-.54-.38-1.13-.38zm0 1.64v.87h1.21c.69 0 1.21-.08 1.21-.43s-.65-.44-1.53-.44zm-2.77 2v-4.74h4c1.9 0 3.42.25 3.42 1.18 0 .49-.57.84-1.1 1 .91.13 1.4.57 1.4 1.08 0 1.05-1.44 1.42-3.64 1.42z" class="cls-1"></path><path d="M21.88 41.26H20.4v.81h1.48v1.44h.84v-1.44h1.48v-.81h-1.48v-1.44h-.84zm-2.36-.37c0-2.86-1.54-4.56-4.08-4.56-3.45 0-4.29 2.35-4.29 4.56 0 2.7 1.35 4.56 4.18 4.56s4.19-1.86 4.19-4.56M5.11 22.68l20.83-6.22 2.06 6.6-10.41 3.11.85 2.7L28.09 26l2.08 6.59-9.64 2.88.9 2.84 10.78-3.22 2.09 6.59L13.13 48l-8-25.32m.77 16.69a7 7 0 0 0 2.59-1.25V45h2v-8.63H8.54A6.9 6.9 0 0 1 5.9 37.7z"></path><path d="M13 40.81c0-2.89 1.16-3.56 2.47-3.56 1.47 0 2.3 1.11 2.3 3.64 0 1.58-.44 3.52-2.32 3.51s-2.52-1.48-2.45-3.59M3.48 10.28V4.8h2.15v.84H4.31V7h1.22v.84H4.31v1.6h1.36v.84zM5.89 4.8h.86l.61 4 .69-4h.81l-1 5.48h-1zm3.35 5.48V4.8h2.14v.84h-1.32V7h1.22v.84h-1.22v1.6h1.37v.84zm3.53 0h-.83V4.8h1.53a.77.77 0 0 1 .67.37 1.94 1.94 0 0 1 .25 1.07 2.1 2.1 0 0 1-.17.88.77.77 0 0 1-.56.46h.18a.6.6 0 0 1 .24.14.8.8 0 0 1 .2.31 1.5 1.5 0 0 1 .09.58v.87a3.5 3.5 0 0 0 0 .47 1.2 1.2 0 0 0 0 .29h-.8a1.5 1.5 0 0 1-.09-.52v-1a1.5 1.5 0 0 0-.06-.39.5.5 0 0 0-.17-.26A.53.53 0 0 0 13 8h-.21zm0-3.11h.36a.28.28 0 0 0 .2-.08.55.55 0 0 0 .14-.19 1 1 0 0 0 .06-.26 1.3 1.3 0 0 0 0-.27 1 1 0 0 0-.11-.56.36.36 0 0 0-.31-.17h-.36zm2.86 1.21-1-3.58h.9l.59 2.32.63-2.32h.84l-1.1 3.58v1.9h-.83zm3.63 1.99a1.18 1.18 0 0 1-.79-.24 1.37 1.37 0 0 1-.4-.63 4 4 0 0 1-.15-.91v-2a4 4 0 0 1 .15-.91 1.37 1.37 0 0 1 .4-.63 1.18 1.18 0 0 1 .79-.24A1.16 1.16 0 0 1 20 5a1.3 1.3 0 0 1 .4.63 3.2 3.2 0 0 1 .15.91v2a3.2 3.2 0 0 1-.15.91 1.3 1.3 0 0 1-.4.63 1.16 1.16 0 0 1-.74.29m0-.82a.37.37 0 0 0 .27-.11.75.75 0 0 0 .16-.37 3.2 3.2 0 0 0 .07-.62V6.63a3.2 3.2 0 0 0-.07-.63.75.75 0 0 0-.16-.36.34.34 0 0 0-.27-.12.35.35 0 0 0-.28.12.86.86 0 0 0-.16.36 4 4 0 0 0-.07.62v1.82a4 4 0 0 0 .07.62.85.85 0 0 0 .16.37.38.38 0 0 0 .28.12m2.01.73V4.8h1.11l1.05 3.8V4.8h.77v5.48h-1.08l-1.07-4v4zm3.63 0V4.8h2.15v.84h-1.33V7h1.22v.84h-1.22v1.6h1.37v.84zm3.86-4.61a3.4 3.4 0 0 0 .4-.37 2.3 2.3 0 0 0 .34-.48h.72v5.46h-.82v-4.2a3 3 0 0 1-.31.33l-.33.28zm3.36-.92a1.1 1.1 0 0 1 .57.14 1 1 0 0 1 .33.47 3.5 3.5 0 0 1 .16.86V8.7a4.3 4.3 0 0 1-.13.89 1.24 1.24 0 0 1-.34.56.84.84 0 0 1-.6.2.8.8 0 0 1-.6-.2 1.24 1.24 0 0 1-.34-.56 4.3 4.3 0 0 1-.13-.89V6.22a3.5 3.5 0 0 1 .16-.86.9.9 0 0 1 .33-.47 1 1 0 0 1 .59-.14m0 .8a.24.24 0 0 0-.19.08.64.64 0 0 0-.1.29v2.61a4.4 4.4 0 0 0 0 .61.64.64 0 0 0 .1.3.19.19 0 0 0 .18.08.21.21 0 0 0 .18-.08.64.64 0 0 0 .1-.3c0-.14 0-.35.05-.61V5.92a.64.64 0 0 0-.1-.29.26.26 0 0 0-.22-.08m2.27.32H35v1.49h.92v.84H35v1.5h-.61V8.2h-.93v-.84h.93z"></path></g></g></svg>
@@ -136,7 +136,7 @@ template: `
                 </div>
                 </div>
               </div>
-              <div class="row dflex align-items-left fw-lighter">
+              <div class="row dflex align-items-center  fw-light">
                 <div class="col-1">      
                   <div class="compatibility-section">
                     <div class="compatibility-info">
@@ -215,10 +215,11 @@ template: `
           </div>
         </div>
         <hr>
-        <div class="row justify-content-start">
-          <div class="col-4" style="color: #666;">
+        <div class="row dflex">
+          <div class="col-4 align-items-Center" style="color: #666;">
             <svg data-name="Switch lite" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" role="presentation" alt="" data-testid="SwitchLiteIcon" size="28" color="currentColor"><path d="M28.737 9.41H3.262a3.218 3.218 0 0 0-3.218 3.218v7.164a3.218 3.218 0 0 0 3.218 3.218h25.475a3.218 3.218 0 0 0 3.219-3.218v-7.164a3.218 3.218 0 0 0-3.219-3.218zm.112 2.173a.563.563 0 1 1-.563.563.563.563 0 0 1 .563-.563zm0 2.32a.563.563 0 1 1-.563.564.563.563 0 0 1 .563-.563zM3.146 12.106a1.2 1.2 0 1 1-1.2 1.201 1.2 1.2 0 0 1 1.2-1.2zm1.437 5.85a.125.125 0 0 1-.125.125h-.731a.133.133 0 0 0-.133.134v.73a.126.126 0 0 1-.125.126h-.636a.125.125 0 0 1-.126-.126v-.73a.133.133 0 0 0-.132-.134h-.732a.125.125 0 0 1-.125-.125v-.636a.125.125 0 0 1 .125-.125h.732a.133.133 0 0 0 .132-.133v-.73a.125.125 0 0 1 .126-.126h.636a.126.126 0 0 1 .125.125v.731a.133.133 0 0 0 .133.133h.73a.125.125 0 0 1 .126.125zm1.674 3.654h19.497V10.82H6.257zm20.807-8.302a.563.563 0 1 1 .563.563.563.563 0 0 1-.563-.563zm1.778 5.532a1.2 1.2 0 1 1 1.2-1.2 1.2 1.2 0 0 1-1.2 1.2zm1.23-4.97a.563.563 0 1 1 .562-.562.563.563 0 0 1-.563.563z" fill="currentColor" fill-rule="evenodd"></path></svg>
-            Supported play modes</div>
+            Supported play modes
+          </div>
           <div class="col-8">
             <div class="detail-content">
               <div class="play-modes">
@@ -646,15 +647,15 @@ template: `
         </div>
 
         <div class="footer-info">
-            <p class="fw-lighter">
+            <p class="fw-light">
                 <strong>WARNING:</strong> If you have epilepsy or have had seizures or other unusual reactions to flashing lights or patterns, consult a doctor before playing video games. All users should read the Health and Safety Information available in the system settings before using this software.
             </p>
             
-            <p class="fw-lighter">
+            <p class="fw-light">
                 Nintendo Switch Online membership (sold separately) and Nintendo Account required for online play. Not available in all countries. Internet access required for online features. Terms apply. nintendo.com/switch-online
             </p>
             
-            <p class="fw-lighter">
+            <p class="fw-light">
                 Stardew Valley © ConcernedApe LLC 2016-2020. All rights reserved.
             </p>
         </div>
